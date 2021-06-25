@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-direction: column;
     color:black;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Overpass' , sans-serif;
 }
 header{
     background-color: coral;
@@ -20,13 +20,15 @@ header{
 footer{
     background-color: hsl(208, 49%, 24%);
     border-top-left-radius: 20%;
-    height: 300px;
+    display: grid;
+    height: 400px;
+    
     width: auto;
 
 }
 section{
 
-    height: 2500px;
+    height: 2450px;
     width:auto;
 }
 nav{
@@ -62,10 +64,14 @@ article{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .drbut{
     display: inline-block;
     position: relative;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
 }
 .drbut-content{
     display: none;
@@ -78,6 +84,7 @@ article{
     color:rgb(112, 9, 9);
     padding: 12px 16px;
     display: block;
+    position: absolute;
 
 }
 .drbut:hover .drbut-content{
@@ -91,4 +98,29 @@ article{
 }
 .drbut:hover .button{
     background-color:rgb(241, 196, 179); ;
+}
+#login{
+    display: block;
+    position:absolute;
+    right: 50px;
+
+}
+#login #Sign_up{
+
+    right: 75px;
+    color: white;
+}
+.titletext{
+    text-align: center;
+    width: 100%;
+}
+/* foooter */
+footer.grid-container{
+    
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+footer.grid-item{
+    padding: 10px;
 }
